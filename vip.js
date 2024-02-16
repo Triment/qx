@@ -2,11 +2,8 @@
 
 脚本功能：问真八字解锁永久钻石会员
 软件版本：2.1.0
-下载地址：http://t.cn/A6CM9OiG
-脚本作者：Hausd0rff
-更新时间：2023-02-28
-电报频道：https://t.me/yqc_123
-问题反馈：https://t.me/yqc_777
+脚本作者：Triment
+更新时间：2024-02-16
 使用声明：⚠️仅供学习交流，🈲️商业用途
 
 *******************************
@@ -21,4 +18,4 @@ hostname = bzpp2.iwzbz.com
 *******************************/
 
 let obj = JSON.parse($response.body);
-$done({ body: JSON.stringify({...obj, vipLevel: 1 })})
+$done({ body: JSON.stringify({ ...obj, vipLevel: 3, vipTipsType:0, expires: "2999-11-28\x2006:06:06" }) })

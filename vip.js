@@ -18,4 +18,9 @@ hostname = bzpp2.iwzbz.com
 *******************************/
 
 let obj = JSON.parse($response.body);
-$done({ body: JSON.stringify({ ...obj, vipLevel: 3, vipTipsType:0, expires: "2999-11-28\x2006:06:06" }) })
+obj.vipLevel = 3;
+obj.vipTipsType = 0;
+obj.expires = "2999-11-28\x2006:06:06";
+let body = JSON.stringify(obj);
+console.log(body);
+$done(body);

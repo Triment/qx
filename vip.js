@@ -21,6 +21,7 @@ let obj = JSON.parse($response.body);
 obj.data.vipLevel = 3;
 obj.data.vipTipsType = 0;
 obj.data.expires = "2999-11-28\x2006:06:06";
+obj.data.adtype = 0;
 let body = JSON.stringify(obj);
 console.log(body);
 $done(body);
